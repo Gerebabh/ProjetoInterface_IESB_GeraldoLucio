@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/luffy-icon.png" type="image/x-icon">
+    <title>One Piece - Personagens</title>
+    <style>
+        /*Logo e menu*/
+        /* Fontes */
+        @import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Ruwudu:wght@400;700&display=swap");
+
+        #logo{
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+
+        #logo a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo-img{
+            width: 25%;
+        }
+        #menu {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            background-color: #D70000;
+        }
+        #menu a {
+            font-family: 'Pirata One';
+            text-decoration: none;
+            color: white;
+            margin-left: 1.5rem;
+        }
+        #menu a:hover {
+            color:#000000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {            
+            font-family: 'Pirata One';
+            text-align: center;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        hr {
+            margin: 40px 0;
+        }
+
+        .integrantes{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .personagens {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            gap: 1rem;
+            border: solid 1px black;
+            border-radius: 10px;
+        }
+
+        .personagem{
+            width: 25rem;
+            margin: 1rem;
+            border-radius: 10px;
+        }
+
+        .description {
+            padding-right: 2rem;
+            text-align: justify;
+        }
+        #button {
+            margin-top: 20px;
+        }
+        #topo {
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding: 0.5rem;
+            border: 2px solid grey;
+            border-radius: 8px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <a href="../index.html"><img id="logo-img" src="../assets/img/logo.png" alt="Logo Anime One-Piece"></a>
+    </div>
+    <div id="menu">
+        <a href="../index.html">INÍCIO</a>
+        <a href="./sobre.html">PERSONAGENS</a>
+        <a href="./caracteristicas.html">CARACTERÍSTICAS</a>
+        <a href="./midia.html">MÍDIA</a>
+        <a href="https://iesb.solutionforge.com.br/index.html">SITE ALUNO</a>
+    </div>
+    
+    <h2>Alguns Personagens da Tripulação do Monkey D. Luffy</h2>
+
+    <div class="integrantes">
+        <div class="personagens">
+            <img class="personagem" src="../assets/img/luffy.jpg" alt="Personagem principal de One Piece, Capitão Monkey D. Luffy.">
+            <p class="description">Este é o principal personagem de One Piece, Monkey D. Luffy, Capitão dos Chapéus de Palha. Usuário da Gomu Gomu no Mi, que transformou seu corpo em borracha.</p>
+        </div>
+        <div class="personagens">
+            <img class="personagem" src="../assets/img/roronoa-zoro.jpg" alt="Personagem principal de One Piece, Capitão Monkey D. Luffy.">
+            <p class="description">Roronoa-Zoro, segundo a integrar o grupo do Chapéu de Palha. é um Espadachim que usa três espadas.</p>
+        </div>  
+        <div class="personagens">
+            <img class="personagem" src="../assets/img/nami.jpg" alt="Personagem principal de One Piece, Capitão Monkey D. Luffy.">
+            <p class="description">Este é a Nami, terceira pessoa a integrar o grupo do Chapéu de Palha. Navegora e especialista em clima. </p>
+        </div>  
+        <div class="personagens">
+            <img class="personagem" src="../assets/img/usopp.jpg" alt="Personagem principal de One Piece, Capitão Monkey D. Luffy.">
+            <p class="description">Este é o Usopp, quarto membro a fazer parte da tripulação do Luffy. Conhecido como exímio atirador e inventor.</p>
+        </div>
+        <div class="personagens">
+            <img class="personagem" src="../assets/img/sanji.jpg" alt="Personagem principal de One Piece, Capitão Monkey D. Luffy.">
+            <p class="description">Sanji Quinto membro da tripulação. Cozinheiro e especializado em luta com as pernas.</p>
+        </div>  
+    </div>
+    <div id="button">
+        <a id="topo" href="#logo">TOPO DA PÁGINA</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/luffy-icon.png" type="image/x-icon">
+    <title>One Piece - Características</title>
+    <style>
+        /* Fontes */
+        @import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Ruwudu:wght@400;700&display=swap");
+
+
+        /*Logo e menu*/
+        #logo{
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+
+        #logo a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo-img{
+            width: 25%;
+        }
+        #menu {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            background-color: #D70000;
+        }
+        #menu a {
+            font-family: 'Pirata One';
+            text-decoration: none;
+            color: white;
+            margin-left: 1.5rem;
+        }
+        #menu a:hover {
+            color:#000000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {            
+            font-family: 'Pirata One';
+            text-align: center;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        hr {
+            margin: 40px 0;
+        }
+
+        #button {
+            margin-top: 20px;
+        }
+        
+        #topo {
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding: 0.5rem;
+            border: 2px solid grey;
+            border-radius: 8px;
+        }
+
+        table th,
+        table td {
+            padding: 1rem;
+        } 
+        table th {
+            background-color: black;
+            color: #f4f4f4;
+        }
+
+        table td {
+            text-align: center;
+        }
+
+        table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+        }
+
+        table tbody tr:hover {
+        background-color: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <a href="../index.html"><img id="logo-img" src="../assets/img/logo.png" alt="Logo Anime One-Piece"></a>
+    </div>
+    <div id="menu">
+        <a href="../index.html">INÍCIO</a>
+        <a href="./sobre.html">PERSONAGENS</a>
+        <a href="./caracteristicas.html">CARACTERÍSTICAS</a>
+        <a href="./midia.html">MÍDIA</a>
+        <a href="https://iesb.solutionforge.com.br/index.html">SITE ALUNO</a>
+    </div>
+
+    
+    <div class="container">
+        <div id="usuarios">
+            <h3>Características dos personagens</h3>
+            <table border="2" aria-describedby="tabela-descricao">
+                <caption id="tabela-descricao">Características dos personagens principais</caption>
+                <thead>
+                    <tr>
+                        <th>Personagem</th>
+                        <th>Fruto do Diabo</th>
+                        <th>Propriedades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monkey D. Luffy</td>
+                        <td>Gomu Gomu no Mi</td>
+                        <td>Transformou o corpo em borracha</td>
+                    </tr>
+                    <tr>
+                        <td>Tony Tony Chopper</td>
+                        <td>Hito Hito no Mi</td>
+                        <td>Pode modificar as formas de seu corpo</td>
+                    </tr>
+                    <tr>
+                        <td>Roronoa-Zoro</td>
+                        <td>Não é usuário do</td>
+                        <td> - </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="arcos">
+            <h3>Arcos preferidos</h3>
+            <table border="2" aria-describedby="tabela-arcos">
+                <caption id="tabela-arcos">Arcos preferidos</caption>
+                <thead>
+                    <tr>
+                        <th>Arco</th>
+                        <th>Preferência</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arco de Wano</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Arco de Enies Lobby</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Arco de Marineford</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Arco de Alabasta</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Arco de Whole Cake Island</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Arco de Dressrosa</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="info-gerais">
+            <h3>Informações Gerais</h3>
+            <table border="2" aria-describedby="tabela-infos">
+                <caption id="tabela-arcos">Informações gerais sobre One Piece</caption>
+                <thead>
+                    <tr>
+                        <th>Autor</th>
+                        <th>Ano Criação</th>
+                        <th>Episódios Lançados</th>
+                        <th>Curiosidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Eiichiro Oda</td>
+                        <td>20 de Outubro de 1999</td>
+                        <td>1100</td>
+                        <td>Anime mais vendido no mundo com mais de 500 milhões de cópias.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="button">
+        <a id="topo" href="#logo">TOPO DA PÁGINA</a>
+    </div>
+
+</body>
+</html>
