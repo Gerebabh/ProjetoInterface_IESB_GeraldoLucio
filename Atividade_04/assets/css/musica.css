@@ -1,0 +1,66 @@
+@import url(./style.css);
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.music-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(215, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(215, 0, 0, 0.3);
+}
+
+
+.soundcloud-player {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.music-info {
+    padding: 1.5rem;
+    background: linear-gradient(to right, #D70000, #B00000);
+    color: white;
+}
+
+.music-title {
+    font-family: 'Pirata One', cursive;
+    margin-bottom: 0.5rem;
+    color: #FFD700;
+}
+
+.music-description {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.soundcloud-credits {
+    font-size: 0.7rem;
+    color: #ccc;
+    padding: 0.5rem;
+    background: #222;
+}
+
+@media (max-width: 768px) {
+    .music-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .soundcloud-player {
+        height: 250px;
+    }
+}

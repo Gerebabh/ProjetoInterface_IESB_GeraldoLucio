@@ -1,0 +1,20 @@
+<script>
+    const pathPrefix = location.pathname.includes("/pages/") ? ".." : ".";
+    document.querySelectorAll("a[data-link]").forEach(link => {
+        const relativePath = link.getAttribute("data-link");
+        link.setAttribute("href", `${pathPrefix}/${relativePath}`);
+    });
+</script>
+
+
+<div class="logo">
+    <a data-link="index.html"><img id="logo-img" src="" alt="One Piece Logo"></a>
+</div>
+<ul>
+    <li><a data-link="index.html">Home</a></li>
+    <li><a data-link="pages/personagens.html">Personagens</a></li>
+    <li><a data-link="pages/arcos.html">Arcos</a></li>
+    <li><a data-link="pages/frutas.html">Frutas do Diabo</a></li>
+    <li><a data-link="pages/musica.html">Musica</a></li>
+    <li><a href="https://iesb.solutionforge.com.br/index.html">Site Aluno</a></li>
+</ul>

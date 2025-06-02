@@ -1,0 +1,101 @@
+@import url(./style.css);
+
+.character-grid {
+    margin-top: 2rem;
+}
+
+/* Estilos Gerais */
+.main-title {
+    font-family: 'Pirata One', cursive;
+    color: #D70000;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.character-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(215, 0, 0, 0.2);
+}
+
+.card-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+}
+
+.character-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    background: linear-gradient(to bottom, #f8f8f8, #fff);
+}
+
+.card-content h2 {
+    color: #D70000;
+    margin-bottom: 0.5rem;
+    font-family: 'Pirata One', cursive;
+}
+
+.role {
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.description {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .character-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    
+    .card-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+    
+    .character-grid {
+        grid-template-columns: 1fr;
+    }
+}
