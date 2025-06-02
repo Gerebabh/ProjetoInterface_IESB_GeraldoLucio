@@ -1,0 +1,130 @@
+@import url(./global.css);
+
+fieldset {
+    border: 2px solid #4CAF50;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+form {
+    background: #f8f6f6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#dados-pessoais {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.size3 {
+    width: 20rem;
+}
+
+.size2 {
+    width: 15rem;
+}
+
+.size1 {
+    width: 12rem;
+}
+
+.inputs {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#adicionais{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+#adc1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#adc2 {
+    display: flex;
+    
+}
+
+.interesse{
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button[name="voltar"] {
+    background-color: blue;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+button[name="iesb"] {
+    background-color: rgb(255, 0, 0);
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media(max-width: 992px) {
+    #dados-pessoais {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    
+    #adicionais{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .size1, .size2, .size3 {
+        width: 100%;
+    }
+
+    #dados-pessoais > div {
+        width: 100%;
+    }
+}

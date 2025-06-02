@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/form-modelo.css">
+    <title>Página de Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Página de Formulário</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div id="form">
+                    <div id="dados-pessoais">
+                        <div>
+                            <label id='nome' for="nome">Nome:</label>
+                            <input class="inputs size3" type="text" id="nome" name="nome" maxlength="200" required >
+                        </div>
+                        <div>
+                            <label for="cpf">CPF:</label>
+                            <input class="inputs size1" type="text" id="cpf" name="cpf" maxlength="14" required>
+                        </div>
+                        <div>
+                            <label for="telefone">Telefone:</label>
+                            <input class="inputs size1" type="tel" id="telefone" name="telefone" maxlength="15" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input class="inputs size2" type="email" id="email" name="email" maxlength="200" required>
+                        </div>
+                        <div>
+                            <label for="estado">Estado:</label>
+                            <select class="inputs size2" id="estado" name="estado" required>
+                                <option value="">Selecione...</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label id='nome' for="cidade">Cidade:</label>
+                            <input class="inputs size2" type="text" id="cidade" name="cidade" maxlength="200" required>
+                        </div>
+                    </div>
+                    <div id="adicionais">
+                        <label>Gênero:</label>
+                        <div id="adc1">
+                            <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+                            <label><input type="radio" name="genero" value="feminino" required> Feminino</label>
+                            <label><input type="radio" name="genero" value="outro" required> Outro</label>
+                        </div>
+                        <label>Interesses:</label>
+                        <div id="adc2">
+                            <div class="interesse">
+                                <label><input type="checkbox" name="interesse" value="tecnologia"> Tecnologia</label>
+                                <label><input type="checkbox" name="interesse" value="musica"> Música</label>
+                                <label><input type="checkbox" name="interesse" value="esportes"> Esportes</label>
+                            </div>
+                            <div class="interesse">
+                                <label><input type="checkbox" name="interesse" value="arte"> Arte</label>
+                                <label><input type="checkbox" name="interesse" value="literatura"> Literatura</label>
+                                <label><input type="checkbox" name="interesse" value="e-games"> E-Games</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="coments">
+                        <label for="comentarios">Comentários:</label><br>
+                        <textarea class="inputs" id="comentarios" name="comentarios" rows="5" cols="100"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+            <button name="voltar"><a href="../index.html">Início</a></button>
+            <button name="iesb"><a href="https://iesb.solutionforge.com.br/index.html">SITE ALUNO</a></button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Todos os direitos reservados.</p>
+    </footer>
+
+    <!--Meu Js-->
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@import url(./global.css);
+
+main {
+    margin: 2rem
+}
+
+#boas-vindas {
+    letter-spacing: 1px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+button[name="iesb"] {
+    background-color: rgb(255, 0, 0);
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
