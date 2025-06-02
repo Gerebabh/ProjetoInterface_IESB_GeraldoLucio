@@ -1,0 +1,185 @@
+@import url(./global.css);
+
+/* === CAROUSEL CUSTOMIZADO === */
+.carrossel-hero {
+    margin-top: 5.5rem; /* Altura da navbar */
+    position: relative;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: auto;
+    min-height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.8);
+}
+
+.carousel-caption {
+    bottom: 5%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.carousel-caption h2 {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.carousel-caption a {
+    text-decoration-color: var(--primary-color) ;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--light-color);
+    background: transparent;
+}
+
+.carousel-indicators .active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+    width: 3rem;
+    height: 3rem;
+}
+
+/* CARDS de Re-direcionamento */
+
+.cards-redirect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 2rem;
+}
+
+.cards-redirect-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.cards-redirect article {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.cards-redirect-link:hover, 
+.cards-redirect-link:focus {
+    background-color: rgba(215, 0, 0, 0.05);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cards-redirect-link h3 {
+    color: #D70000;
+    transition: color 0.3s;
+}
+
+.cards-redirect-link:hover h3 {
+    color: #B00000;
+}
+
+/* Carousel Infinito */
+/* Carousel Infinito */
+.ticker {
+    overflow: hidden;
+    background: #f8f9fa; /* Bootstrap bg-light */
+    padding: 10px 0;
+}
+
+.ticker-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    animation: ticker-scroll linear infinite;
+    width: max-content;
+}
+
+.ticker-item {
+    margin: 0 20px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.logo-container {
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* Animação básica (a duração será definida via JavaScript) */
+@keyframes ticker-scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+
+@media (max-width: 768px) {
+    .carrossel-hero {
+        margin-top: 0; /* Altura mobile da navbar */
+    }
+
+    .carousel-item {
+        min-height: auto;
+    }
+
+    .carousel-caption h2 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .cards-redirect {
+        margin: 1rem 1rem;
+        gap: 1rem;
+    }
+}
+
+

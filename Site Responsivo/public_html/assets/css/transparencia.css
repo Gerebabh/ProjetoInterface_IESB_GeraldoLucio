@@ -1,0 +1,23 @@
+@import url(./global.css);
+
+.nav {
+    padding: 0 0 0 1rem;
+}
+
+.transparencia {
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+.nav-pills .nav-link  {
+    background-color: #f8f8f8;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+    margin-right: 1rem;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--secondary-color); 
+    color: #ffffff;
+    border: 1px solid var(--dark-color);
+}

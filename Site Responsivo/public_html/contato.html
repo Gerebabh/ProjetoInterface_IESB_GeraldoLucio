@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- SEO Básico -->
+<title>FPEMG - Contato</title>
+<meta name="description" content="Federação que fomenta o paintball em MG com registro de atletas, eventos.">
+<meta name="keywords" content="Paintball, Torneios, Eventos Esportivos, Competições, Federação Paulista">
+
+<!-- Pré-conexão para CDNs -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+<!-- Favicon Moderno -->
+<link rel="icon" href="./assets/img/base_site/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./assets/img/base_site/apple-touch-icon.png">
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- CSS Customizado -->
+<link rel="stylesheet" href="./assets/css/contato.css">
+
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main class="container">
+        <h2 class="texto-inicial">Fale Conosco</h2>
+        <p>Para falar com a FPEMG, basta realizar o contato em um dos canais disponibilizados abaixo.</p>
+
+        <div class="formulario">
+            <form id="formulario-contato" method="post" action="/includes/contato.php">
+                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                <div class="row dados-entrada">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-12 mb-1">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
+                                    <label for="nome">Nome*:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-1">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" name="email" required placeholder="Email" autocomplete="email">
+                                    <label for="email">Email*:</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-1">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Título" autocomplete="Titulo">
+                                <label for="titulo">Título:</label>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-12 mb-1">
+                                <div class="form-floating">
+                                <input type="tel" class="form-control" id="telefone" name="telefone" required placeholder="(00) 00000-0000" maxlength="15">
+                                    <label for="telefone">Telefone - (DDD)  Número*:</label>
+                                </div>
+                            </div> 
+                            <div class="col-12 mb-1">
+                                <div class="form-floating">
+                                    <select class="form-select" id="motivoContato" name="motivoContato">
+                                        <option selected>Selecione o motivo do contato</option>
+                                        <option value="Arbitragem">Arbitragem</option>
+                                        <option value="Dúvida">Dúvida</option>
+                                        <option value="Elogio">Elogio</option>
+                                        <option value="Filiação">Filiação</option>
+                                        <option value="Reclamação">Reclamação</option>
+                                    </select>
+                                    <label for="motivoContato">Motivo do Contato:</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-1 mensagem">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Mensagem" id="mensagem" name="mensagem" required></textarea>
+                            <label for="mensagem">Mensagem*:</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="captcha">
+                    <input type="hidden" id="recaptcha_token" name="recaptcha_token">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-danger btn-primary" id="btn-enviar-email">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="informacao-contato">
+            <h4 id="demais-contatos">Demais contatos:</h4>
+            <a href="https://wa.me/5531982241179" target="_blank" class="btn btn-success btn-custom d-flex align-items-center">
+                <svg class="bi bi-whatsapp-alt me-2" width="2rem" height="1.3rem" viewBox="0 0 16 16" fill="white">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
+                <span>Whatsapp</span>
+            </a>
+            <p>Telefone: (31) 98224-1179</p>
+            <p>Email: <a href="mailto:contato@fpemg.com.br">contato@fpemg.com.br</a></p>
+            <p>Endereço: Rua Icaraí, n.º 433 Apto 302 | Caiçaras | Belo Horizonte - MG | 30770-160</p>
+            <p>Horários: De Segunda-Feira a Sexta-Feira entre 10:00h às 16:00h.</p>
+        </div>      
+    </main>   
+
+    <footer id="footer"></footer>
+    <!--Vlibras-->
+    <div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    </div>
+
+
+    <!-- Bootstrap Bundle com Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Google Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfjnTcrAAAAAIF6j8sw0eplbjhcai-0F7tNgCMA"></script>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/header_footer.js" defer></script>
+    <script src="./assets/js/contato.js"></script>
+
+</body>
+</html>

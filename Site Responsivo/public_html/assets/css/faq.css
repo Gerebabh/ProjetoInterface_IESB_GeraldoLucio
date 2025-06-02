@@ -1,0 +1,39 @@
+@import url(./global.css);
+
+#titulo-pagina em{
+    letter-spacing: 2px;
+}
+
+.accordion {
+    --bs-accordion-btn-bg: rgb(226, 17, 17);
+    --bs-accordion-active-bg: black;
+    --bs-accordion-active-color: white;
+    margin: 1rem 0;
+}
+
+.accordion-button{
+    background: linear-gradient(120deg, 
+    var(--light-color) 70%, 
+    var(--secondary-color) 100%);
+    color: var(--dark-color)!important;
+    font-size: small;
+    padding: 0.5rem 0.5rem;
+}
+
+.accordion-button.collapsed::after,
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+}
+.accordion-body {
+    background-color: var(--light-color);
+    text-align: justify;
+}
+
+.accordion-button:focus {
+    color: var(--secondary-color);
+}
+
+.accordion-button {
+    width: 100%;
+    box-sizing: border-box; /* Garante que padding/border sejam incluídos na largura */
+}

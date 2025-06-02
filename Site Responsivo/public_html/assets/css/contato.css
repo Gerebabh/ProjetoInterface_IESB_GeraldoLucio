@@ -1,0 +1,58 @@
+@import url(./global.css);
+
+
+/* Parâmetros do Formulário */
+
+.dados-entrada {
+    width: 100%;
+}
+
+.formulario {
+    width: 100%;
+}
+
+.informacao-contato {
+    width: 100;
+    text-align: center;
+}
+
+#mensagem{
+    height: 6rem;
+}
+
+/* Botão */
+.btn-custom {
+    width: 130px;
+    height: 35px;
+    margin: auto;
+}
+
+.btn-custom:hover{
+    background-color: rgb(1, 70, 1);
+    color:white;
+}
+
+@media (max-width: 992px) {
+    .formulario, .informacao-contato {
+        width: 100%;
+    }
+
+    
+    .informacao-contato {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    #mensagem{
+        margin-bottom: 1rem;
+    }
+    #demais-contatos {
+        margin-top: 1rem;
+    }
+
+    #demais-contatos,
+    .informacao-contato p {
+        padding: 0;
+    }
+
+}

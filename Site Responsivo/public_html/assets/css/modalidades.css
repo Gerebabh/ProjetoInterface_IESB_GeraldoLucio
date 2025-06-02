@@ -1,0 +1,64 @@
+@import url(./global.css);
+
+
+
+.gradient-header {
+    background: linear-gradient(125deg,
+    var(--light-color)90%,
+    var(--secondary-color))95%;
+    color: var(--black-color);
+}
+
+.card-hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/*Ajustes de texto*/
+h1, h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+}
+
+main p {
+    text-align: justify;
+}
+
+/* Ajuste scroll da página*/
+:target {
+    scroll-margin-top: 6rem;
+}
+
+/* Modalidades*/
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover
+}
+
+.modalidade-badge {
+    font-size: 0.8rem;
+    background-color: #e74c3c;
+}
+
+/* Lista de equipamentos */
+.equipment-image {
+    object-fit: cover;
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Manter proporção em todos os dispositivos */
+@media (max-width: 768px) {
+    .equipment-image-wrapper {
+        aspect-ratio: 4/3;
+    }
+}
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- SEO Básico -->
+<title>FPEMG - MODELO</title>
+<meta name="description" content="Federação que fomenta o paintball em MG com registro de atletas, eventos.">
+<meta name="keywords" content="Paintball, Torneios, Eventos Esportivos, Competições, Federação Paulista">
+
+<!-- Pré-conexão para CDNs -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+<!-- Favicon Moderno -->
+<link rel="icon" href="./assets/img/base_site/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./assets/img/base_site/apple-touch-icon.png">
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- CSS Customizado -->
+<link rel="stylesheet" href="./assets/css/global.css">
+
+<style>
+.tree-diagram {
+    font-family: 'Courier New', monospace;
+    background: #000000;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 600px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+</style>
+
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <h1 style="text-align: center;">Requisitos - Para desenvolvimento de Site Responsivo</h1>
+        <p>O site funcional pode ser acessado no ambiente de <a href="https://fpemg.solutionforge.com.br">homologação</a>. Produção <a href="https://fpemg.com.br">aqui!</a></p>
+        <div>
+            <ul>
+                <li>Crie uma estrutura básica de HTML para o site, incluindo a importação das bibliotecas do Bootstrap.</li>
+                    <p>Atendido em todas as páginas criadas.</p>
+                <li>Utilize o componente "navbar" do Bootstrap para criar a barra de navegação no topo do site.</li>
+                    <p>Atendido. Seguindo as melhores práticas do mercado a NAV e FOOTER estão localizados dentro de assets\components e são chamados de forma dinânica via JS.</p>
+                <li>Adicione o nome da empresa e os links para as seções correspondentes.</li>
+                    <p>Atendido. NAV, LOGO, LINKS de Redes Sociais.</p>
+                <li>Crie um cabeçalho com uma imagem de destaque e um texto de boas-vindas utilizando as classes do Bootstrap para alinhamento e estilização.</li>
+                    <p>Atendido.</p>
+                <li>Divida o restante do conteúdo do site em no mínimo 4 seções. Por exemplo, crie uma seção "Sobre nós" com informações sobre a empresa, uma seção "Produtos" com uma lista de produtos e uma seção "Contato" com um formulário de contato.</li>
+                    <p>Atendido. Início, Quem Somos, Modalidades, Federados (DropDown), Dúvidas, Contato e Transparência.</p>
+                <li>Utilize as classes do Bootstrap para tornar o site responsivo, garantindo que ele se adapte a diferentes tamanhos de tela.</li>
+                    <p>Atendido. Aplicado e funcional em todas as páginas.</p>
+                <li>Adicione estilos personalizados ao site utilizando as classes do Bootstrap ou criando suas próprias classes CSS.</li>
+                    <p>Atendido. Aplicado e funcional em todas as páginas.</p>
+                <li>Adicione um carrossel de imagens na seção de destaque do cabeçalho, exibindo várias imagens de forma rotativa.</li>
+                    <p>Atendido. Localizado em Início.</p>
+                <li>Adicione no mínimo 2 acordeons em sua estrutura total.</li>
+                    <p>Atendido + de 2.</p>
+                <li>Crie uma seção de depoimentos, utilizando o componente "carousel" do Bootstrap, onde os clientes podem deixar feedback sobre a empresa, ou apenas passagem de imagens. Pode utilizar outros recursos também desde que atenda esse requisito.</li>
+                    <p><b>Substituído por um carousel infinito</b> na página index.html abaixo dos cards. Com mensagem sobre a federação.</p>
+                <li>Implemente um formulário na seção de contato, utilizando os componentes de formulário do Bootstrap.</li>
+                    <p>Atendido. Funcional e com captcha.</p>
+                <li>Adicione ícones sociais na barra de navegação ou no rodapé do site, permitindo que os visitantes se conectem com a empresa em diferentes plataformas.</li>
+                    <p>Atendido. Ícones estão no footer.</p>
+                <li>Explore as classes de utilitário do Bootstrap, como cores, espaçamentos e tipografia, para aprimorar o estilo e a aparência do site. Deve utilizar as mesmas cores da Logo.</li>
+                    <p>Atendido. Em todos as páginas.</p>
+                <li>Integre o Google Maps na seção de contato para exibir a localização da empresa, ou aplique outro api de localização.</li>
+                    <p><b>Não atendido via maps.</b> Por ser um projeto real, o registro da Federação é exibido, mas ninguém é incentivado a ir até lá por não ter atendimento. Substituido em Federados|Federe-se com formulário Goolge. Funciona da mesma forma via iframe.</p>
+                <li>Crie uma página de equipe para exibir informações sobre os membros da empresa, incluindo suas fotos e descrições. Pode ser também uma página sobre você mesmo.</li>
+                    <p>Atendido. Quem Somos</p>
+            </ul>
+        </div>
+        <div>
+            <h3>Estrutura de Pastas</h3>
+            <pre class="tree-diagram">
+                .
+                └── public_html
+                    ├── assets
+                    │   ├── components
+                    │   │   ├── footer.html
+                    │   │   └── header.html
+                    │   ├── css
+                    │   │   ├── contato.css
+                    │   │   ├── faq.css
+                    │   │   ├── federados.css
+                    │   │   ├── global.css
+                    │   │   ├── index.css
+                    │   │   ├── modalidades.css
+                    │   │   ├── quem-somos.css
+                    │   │   └── transparencia.css
+                    │   ├── docs
+                    │   │   ├── cnpj.pdf
+                    │   │   └── estatuto_fundacao.pdf
+                    │   ├── img
+                    │   │   ├── base_site
+                    │   │   │   ├── apple-touch-icon.png
+                    │   │   │   ├── favicon.ico
+                    │   │   │   ├── logo-fpemg.webp
+                    │   │   │   └── logo_padrao.jpg
+                    │   │   ├── carousel
+                    │   │   │   ├── img_01.webp
+                    │   │   │   ├── img_02.webp
+                    │   │   │   ├── img_03.webp
+                    │   │   │   ├── img_04.webp
+                    │   │   │   └── img_05.webp
+                    │   │   ├── modalidades
+                    │   │   │   ├── airtank.webp
+                    │   │   │   ├── barrelsox.webp
+                    │   │   │   ├── cenario.jpg
+                    │   │   │   ├── i5.jpg
+                    │   │   │   ├── jogador-speed.jpg
+                    │   │   │   ├── marcador.webp
+                    │   │   │   ├── milsim.jpg
+                    │   │   │   ├── paintball.jpg
+                    │   │   │   └── rotorr2.webp
+                    │   │   └── quem-somos
+                    │   │       ├── cassio.webp
+                    │   │       ├── deslandes.webp
+                    │   │       ├── julio_m.webp
+                    │   │       ├── miguel.webp
+                    │   │       └── rodrigo.webp
+                    │   ├── js
+                    │   │   ├── contato.js
+                    │   │   ├── faq.js
+                    │   │   ├── federados.js
+                    │   │   ├── header_footer.js
+                    │   │   └── index.js
+                    │   └── video
+                    │       └── modalidades
+                    │           ├── camp_cenario.mp4
+                    │           ├── camp_cenario.vtt
+                    │           ├── camp_cenario_en.vtt
+                    │           ├── speed_cmp.mp4
+                    │           ├── speed_cmp.vtt
+                    │           └── speed_cmp_en.vtt
+                    ├── contato.html
+                    ├── faq.html
+                    ├── federados.html
+                    ├── filiese.html
+                    ├── includes
+                    │   ├── config.php
+                    │   ├── contato.php
+                    │   ├── faq.php
+                    │   └── federados.php
+                    ├── index.html
+                    ├── modalidades.html
+                    ├── pages
+                    ├── quem-somos.html
+                    └── transparencia.html
+            </pre>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+    <!--Vlibras-->  
+    <div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    </div>
+
+
+<!-- Bootstrap Bundle com Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+
+<!-- SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Seu JavaScript -->
+<script src="./assets/js/header_footer.js" defer></script>
+
+</body>
+</html>
+
